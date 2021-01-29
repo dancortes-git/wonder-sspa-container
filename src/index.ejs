@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Root Config</title>
+  <title>Wonder</title>
   <!--
     Remove this if you only support browsers that support async/await.
     This is needed by babel to share largeish helper code for compiling async/await in older
@@ -47,7 +47,7 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "@rd/root-config": "//localhost:9000/rd-root-config.js",
+        "@rd/root-config": "http://localhost:9000/rd-root-config.js",
         "@rd/wonder-sspa-customer": "http://localhost:8001/rd-wonder-sspa-customer.js",
         "@rd/wonder-sspa-legal": "http://localhost:8002/rd-wonder-sspa-legal.js",
         "@rd/wonder-sspa-purchase": "http://localhost:8003/rd-wonder-sspa-purchase.js",
@@ -56,6 +56,8 @@
       }
     }
   </script>
+  <% } else { %>
+    <script type="systemjs-importmap" src="https://wonder-sspa.dancortes.com/importmap.json"></script>
   <% } %>
 
   <!--
