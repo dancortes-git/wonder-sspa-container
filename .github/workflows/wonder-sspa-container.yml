@@ -6,6 +6,7 @@ on:
       - master
     paths-ignore:
       - "config/**"
+      - '.github/workflows/wonder-sspa-importmap.yml'
 
 jobs:
   build:

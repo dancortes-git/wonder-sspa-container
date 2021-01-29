@@ -6,6 +6,7 @@ on:
       - master
     paths:
       - 'config/importmap.json'
+      - '.github/workflows/wonder-sspa-container.yml'
 
 jobs:
   build:
