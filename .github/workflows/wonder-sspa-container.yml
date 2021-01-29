@@ -5,8 +5,9 @@ on:
     branches:
       - master
     paths-ignore:
-      - "config/**"
+      - 'config/**'
       - '.github/workflows/wonder-sspa-importmap.yml'
+      - 'README.md'
 
 jobs:
   build:
