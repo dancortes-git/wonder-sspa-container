@@ -8,6 +8,7 @@ on:
       - 'config/**'
       - '.github/workflows/wonder-sspa-importmap.yml'
       - 'README.md'
+      - 'images/**'
 
 jobs:
   build:
