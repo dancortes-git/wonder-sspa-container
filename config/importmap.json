@@ -5,6 +5,7 @@
     "@rd/wonder-sspa-legal": "https://wonder-sspa.dancortes.com/legal/latest/rd-wonder-sspa-legal.js",
     "@rd/wonder-sspa-purchase": "https://wonder-sspa.dancortes.com/purchase/latest/rd-wonder-sspa-purchase.js",
     "@rd/wonder-sspa-marketing": "https://wonder-sspa.dancortes.com/marketing/latest/rd-wonder-sspa-marketing.js",
-    "@rd/wonder-sspa-product": "https://wonder-sspa.dancortes.com/product/latest/rd-wonder-sspa-product.js"
+    "@rd/wonder-sspa-product": "https://wonder-sspa.dancortes.com/product/latest/rd-wonder-sspa-product.js",
+    "@rd/wonder-sspa-product-v2": "https://wonder-sspa.dancortes.com/product/latest/rd-wonder-sspa-product.js"
   }
 }
