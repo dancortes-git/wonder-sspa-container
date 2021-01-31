@@ -52,7 +52,8 @@
         "@rd/wonder-sspa-legal": "http://localhost:8002/rd-wonder-sspa-legal.js",
         "@rd/wonder-sspa-purchase": "http://localhost:8003/rd-wonder-sspa-purchase.js",
         "@rd/wonder-sspa-marketing": "http://localhost:8004/rd-wonder-sspa-marketing.js",
-        "@rd/wonder-sspa-product": "http://localhost:8005/rd-wonder-sspa-product.js"
+        "@rd/wonder-sspa-product": "http://localhost:8005/rd-wonder-sspa-product.js",
+        "@rd/wonder-sspa-loading": "http://localhost:8006/rd-wonder-sspa-loading.js"
       }
     }
   </script>
@@ -94,20 +95,33 @@
   <template id="single-spa-layout">
     <single-spa-router>
       <div class="root-app">
-        <application name="@rd/wonder-sspa-customer" props="onSignOut,getUser,addSignInEventListener,removeSignInEventListener,addSignOutEventListener,removeSignOutEventListener"></application>
+        <application
+          name="@rd/wonder-sspa-customer"
+          props="onSignOut,getUser,addSignInEventListener,removeSignInEventListener,addSignOutEventListener,removeSignOutEventListener"
+          loader="wonderloading"></application>
         <main class="main-app">
           <route path="auth">
-            <application name="@rd/wonder-sspa-purchase" props="onSignIn,getUser,addSignInEventListener,removeSignInEventListener,addSignOutEventListener,removeSignOutEventListener"></application>
+            <application
+              name="@rd/wonder-sspa-purchase"
+              props="onSignIn,getUser,addSignInEventListener,removeSignInEventListener,addSignOutEventListener,removeSignOutEventListener"
+              loader="wonderloading"></application>
           </route>
           <route path="app">
-            <application name="@rd/wonder-sspa-product" props="getUser,addSignInEventListener,removeSignInEventListener,addSignOutEventListener,removeSignOutEventListener"></application>
+            <application
+              name="@rd/wonder-sspa-product"
+              props="getUser,addSignInEventListener,removeSignInEventListener,addSignOutEventListener,removeSignOutEventListener"
+              loader="wonderloading"></application>
           </route>
           <route default>
-            <application name="@rd/wonder-sspa-marketing" props="getUser,addSignInEventListener,removeSignInEventListener,addSignOutEventListener,removeSignOutEventListener"></application>
+            <application
+              name="@rd/wonder-sspa-marketing"
+              props="getUser,addSignInEventListener,removeSignInEventListener,addSignOutEventListener,removeSignOutEventListener"
+              loader="wonderloading" ></application>
           </route>
         </main>
         <footer class="footer-app">
-          <application name="@rd/wonder-sspa-legal"></application>
+          <application
+            name="@rd/wonder-sspa-legal"></application>
         </footer>
       </div>
     </single-spa-router>

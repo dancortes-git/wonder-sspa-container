@@ -30,6 +30,9 @@ const data = {
     addSignOutEventListener,
     removeSignOutEventListener,
   },
+  loaders: {
+    wonderloading: () => System.import("@rd/wonder-sspa-loading"),
+  },
 };
 
 const routes = constructRoutes(
